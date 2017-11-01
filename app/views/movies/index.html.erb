@@ -1,0 +1,14 @@
+
+
+<h1>Movies</h1>
+
+<% @movies.each do |movie| %>
+
+<div>
+    <div><%= movie.title %></div>
+    <div>Genre: <%= movie.genre %></div>
+    <div>Year: <%= movie.release_year %></div>
+    <div>Synopsis: <%= movie.synopsis %></div>
+    <div><img src=<% @movie.image %></div>
+</div>
+<% end%>
